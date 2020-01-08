@@ -6,7 +6,8 @@
 
 <body>
     <div class="container">
-        <a href="admin.php">Go to Home</a>
+        <button type="button" class="btn btn-outline-primary" style="margin-top:10px;"><a href="admin.php">Go to Home</a></button>
+        
         <br/><br/>
 
         <form action="add.php" method="post" name="form1">
@@ -42,7 +43,7 @@
             $result = mysqli_query($mysqli, "INSERT INTO tempatparkir(nama,harga,desk) VALUES('$nama','$harga','$desk')");
 
             // Show message when user added
-            echo "User added successfully. <a href='admin.php'>View Users</a>";
+            echo "Tempat parkir berhasil ditambahkan. <a href='admin.php'>Lihat Pempat Parkir</a>";
         }
         ?>
 
