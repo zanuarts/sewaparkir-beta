@@ -6,7 +6,7 @@
 
 <body>
     <div class="container">
-        <a href="index.php">Go to Home</a>
+        <a href="admin.php">Go to Home</a>
         <br/><br/>
 
         <form action="add.php" method="post" name="form1">
@@ -42,7 +42,7 @@
             $result = mysqli_query($mysqli, "INSERT INTO tempatparkir(nama,harga,desk) VALUES('$nama','$harga','$desk')");
 
             // Show message when user added
-            echo "User added successfully. <a href='index.php'>View Users</a>";
+            echo "User added successfully. <a href='admin.php'>View Users</a>";
         }
         ?>
 
